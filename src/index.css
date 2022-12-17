@@ -1,0 +1,269 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+.mainpage {
+  height: 100vh;
+}
+.mainpage > .top {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.mainpage .down {
+  position: relative;
+  display: flex;
+}
+.down > .sidenavbar {
+  position: sticky;
+  top: 65px;
+  height: 91vh;
+  border:1px solid;
+
+  flex: 1;
+}
+.sidenavbar > .options {
+  position: relative;
+  padding: 25px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+.sidenavbar > .options:hover {
+  background-color: rgba(128, 128, 128, 0.41);
+}
+.down > .showpages {
+  position: relative;
+  flex: 5;
+}
+.Torders {
+  position: absolute;
+  top: 18px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.addproduct {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+.addproduct h1 {
+  margin: 10px 0px;
+}
+.images {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+}
+.images > .image {
+  position: relative;
+  width: max-content;
+}
+.images > .image > img {
+  width: 300px;
+  height: 200px;
+}
+.uploadbtn {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+.topform {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.topform > div {
+  display: flex;
+  flex-direction: column;
+}
+.topform > .left {
+  flex: 2;
+}
+.topform > .right {
+  flex: 2;
+}
+
+.downform {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.downform > div {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.form input,
+select,
+textarea {
+  padding: 8px;
+  font-size: 16px;
+}
+.postbtn {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.postbtn > button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: green;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* manage product */
+.manageproduct {
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
+  place-items: center;
+}
+.manageproduct > .top {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.manageproduct > .down {
+  margin-top: 40px;
+  justify-content: center;
+}
+.sm {
+  width: 100px;
+}
+.smr {
+  width: 400px;
+}
+th,
+td {
+  border: 0.5px solid rgba(128, 128, 128, 0.578);
+  /* padding: 5px 10px; */
+  text-align: center;
+}
+th{
+  background-color: black;
+  padding: 10px;
+  border: none;
+  color: #fff;
+}
+.DE {
+  cursor: pointer;
+}
+.DE:hover {
+  color: red;
+}
+.disable {
+  cursor: not-allowed;
+}
+.updatearea {
+  position: absolute;
+  background-color: white;
+  top: 50px;
+  left: 260px;
+  width: 50%;
+}
+/* update */
+.updatedetail {
+  box-shadow: rgba(0, 0, 0.65, 0.65) 0px 5px 15px;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+.update {
+  margin-top: 20px;
+}
+.update > .top {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.update > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.update label {
+  margin: 5px 0px;
+}
+.update input,
+textarea {
+  padding: 5px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.updatedetail .close {
+  margin-bottom: 10px;
+  float: right;
+  cursor: pointer;
+}
+.upd {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: #fff;
+}
